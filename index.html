@@ -16,16 +16,16 @@
                 <p>A selection of delicious bites to kick-off your cravings.</p>
                 <ol type="1">
                     <li>
-                        <label>Soup of the Day - Rs.50</label>
-                        <input type="checkbox">
+                        <label>Manchow soup - Rs.50</label>
+                        <input type="checkbox" id="Soup">
                     </li>
                     <li>
                         <label>Crispy Onion Rings - Rs.60</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="OnionRings">
                     </li>
                     <li>
                         <label>Mini Samosas - Rs.20</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="Samosas">
                     </li>
                 </ol>
             </li>
@@ -35,15 +35,15 @@
                 <ol type="1">
                     <li>
                         <label>Spicy Tandoori Burger - Rs.60</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="TandooriBurger">
                     </li>
                     <li>
                         <label>Loaded Veggie Pizza - Rs.120</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="VeggiePizza">
                     </li>
                     <li>
                         <label>Masala Fries - Rs.80</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="Fries">
                     </li>
                 </ol>
             </li>
@@ -53,21 +53,63 @@
                 <ol type="1">
                     <li>
                         <label>Chocolate Milkshake - Rs.80</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="ChocolateMilkshake">
                     </li>
                     <li>
                         <label>Chocolate Ice Cream - Rs.40</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="ChocolateIceCream">
                     </li>
                     <li>
                         <label>Jalebi with Rabri - Rs.60</label>
-                        <input type="checkbox">
+                        <input type="checkbox" id="JalebiwithRabri">
                     </li>
                 </ol>
             </li>
         </ul>
+        <p id="bill">Total Bill: Rs. 0</p>
     </div>
-    <script src="script.js"></script>
+    <script>
+        // Get the checkbox elements
+        let Soup = document.getElementById('Soup');
+        let OnionRings = document.getElementById('OnionRings');
+        let Samosas = document.getElementById('Samosas');
+        let TandooriBurger = document.getElementById('TandooriBurger');
+        let VeggiePizza = document.getElementById('VeggiePizza');
+        let Fries = document.getElementById('Fries');
+        let ChocolateMilkshake = document.getElementById('ChocolateMilkshake');
+        let ChocolateIceCream = document.getElementById('ChocolateIceCream');
+        let JalebiwithRabri = document.getElementById('JalebiwithRabri');
+
+        // Get the bill display element
+        const billDisplay = document.getElementById('bill');
+
+        // Function to calculate the bill total
+        function calculateBill() {
+            let total = 0;
+            if (soupDay.checked) total += 50;
+            if (calamari.checked) total += 60;
+            if (bruschetta.checked) total += 20;
+            if (salmon.checked) total += 60;
+            if (steak.checked) total += 120;
+            if (penne.checked) total += 80;
+            if (cake.checked) total += 80;
+            if (tiramisu.checked) total += 40;
+            if (fruitTart.checked) total += 60;
+
+            return total;
+        }
+
+        // Update bill display whenever a checkbox is checked/unchecked
+        Soup.addEventListener('change', updateBill);
+        OnionRings.addEventListener('change', updateBill);
+        Samosas.addEventListener('change', updateBill);
+        TandooriBurger.addEventListener('change', updateBill);
+        VeggiePizza.addEventListener('change', updateBill);
+        Fries.addEventListener('change', updateBill);
+        ChocolateMilkshake.addEventListener('change', updateBill);
+        ChocolateIceCream.addEventListener('change', updateBill);
+        JalebiwithRabri.addEventListener('change', updateBill);
+    </script>
 </body>
 
 </html>
