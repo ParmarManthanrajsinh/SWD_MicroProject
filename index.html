@@ -67,6 +67,8 @@
             </li>
         </ul>
         <p id="bill">Total Bill: Rs. 0</p>
+        <label>Calculate Bill</label>
+        <input type="button" value="Calculate" onclick="calculateBill()">
     </div>
     <script>
         // Get the checkbox elements
@@ -80,35 +82,23 @@
         let ChocolateIceCream = document.getElementById('ChocolateIceCream');
         let JalebiwithRabri = document.getElementById('JalebiwithRabri');
 
-        // Get the bill display element
-        const billDisplay = document.getElementById('bill');
 
         // Function to calculate the bill total
         function calculateBill() {
             let total = 0;
-            if (soupDay.checked) total += 50;
-            if (calamari.checked) total += 60;
-            if (bruschetta.checked) total += 20;
-            if (salmon.checked) total += 60;
-            if (steak.checked) total += 120;
-            if (penne.checked) total += 80;
-            if (cake.checked) total += 80;
-            if (tiramisu.checked) total += 40;
-            if (fruitTart.checked) total += 60;
 
-            return total;
+            if (Soup.checked) total += 50;
+            if (OnionRings.checked) total += 60;
+            if (Samosas.checked) total += 20;
+            if (TandooriBurger.checked) total += 60;
+            if (VeggiePizza.checked) total += 120;
+            if (Fries.checked) total += 80;
+            if (ChocolateMilkshake.checked) total += 80;
+            if (ChocolateIceCream.checked) total += 40;
+            if (JalebiwithRabri.checked) total += 60;
+
+            document.getElementById('bill').innerHTML = "Total Bill: Rs. " + total;
         }
-
-        // Update bill display whenever a checkbox is checked/unchecked
-        Soup.addEventListener('change', updateBill);
-        OnionRings.addEventListener('change', updateBill);
-        Samosas.addEventListener('change', updateBill);
-        TandooriBurger.addEventListener('change', updateBill);
-        VeggiePizza.addEventListener('change', updateBill);
-        Fries.addEventListener('change', updateBill);
-        ChocolateMilkshake.addEventListener('change', updateBill);
-        ChocolateIceCream.addEventListener('change', updateBill);
-        JalebiwithRabri.addEventListener('change', updateBill);
     </script>
 </body>
 
