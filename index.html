@@ -9,96 +9,92 @@
 <body>
     <h1>Welcome to The Quick Bite!</h1>
     <div class="menu centered-element">
-        <ul>
-            <li class="menu-item">
-                <h3>Starters</h3>
-                <p>A selection of delicious bites to kick-off your cravings.</p>
 
-                <table>
-                    <tr>
-                        <td>
-                            <img src="Background/1.jpg" alt="LOL" height="200" width="200">
-                            <label>1. Manchow soup - Rs.50</label>
-                            <input type="checkbox" id="Soup">
-                        </td>
+        <div class="element">
+            <h2>Starters</h2>
+            <p>A selection of delicious bites to kick-off your cravings.</p>
 
-                        <td>
-                            <img src="Background/2.jpg" alt="LOL" height="200" width="200">
-                            <label>2. Crispy Onion Rings - Rs.60</label>
-                            <input type="checkbox" id="OnionRings">
-                        </td>
+            <table>
+                <tr>
+                    <td>
+                        <img src="Background/1.jpg" alt="LOL" height="200" width="200">
+                        <label>1. Manchow soup - Rs.50</label>
+                        <input type="checkbox" id="Soup">
+                    </td>
 
-                        <td>
-                            <img src="Background/3.jpg" alt="LOL" height="200" width="200">
-                            <label>3. Mini Samosas - Rs.20</label>
-                            <input type="checkbox" id="Samosas">
-                        </td>
-                    </tr>
-                </table>
+                    <td>
+                        <img src="Background/2.jpg" alt="LOL" height="200" width="200">
+                        <label>2. Crispy Onion Rings - Rs.60</label>
+                        <input type="checkbox" id="OnionRings">
+                    </td>
 
+                    <td>
+                        <img src="Background/3.jpg" alt="LOL" height="200" width="200">
+                        <label>3. Mini Samosas - Rs.20</label>
+                        <input type="checkbox" id="Samosas">
+                    </td>
+                </tr>
+            </table>
+        </div>
 
+        <div class="element">
+            <h3>Main Courses</h3>
+            <p>Our signature hunger-busting options.</p>
 
-            </li>
-            <li class="menu-item">
-                <h3>Main Courses</h3>
-                <p>Our signature hunger-busting options.</p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="Background/4.jpg" alt="LOL" height="200" width="200">
+                        <label>Spicy Tandoori Burger - Rs.60</label>
+                        <input type="checkbox" id="TandooriBurger">
+                    </td>
 
-                <table>
-                    <tr>
-                        <td>
-                            <img src="Background/4.jpg" alt="LOL" height="200" width="200">
-                            <label>Spicy Tandoori Burger - Rs.60</label>
-                            <input type="checkbox" id="TandooriBurger">
-                        </td>
+                    <td>
+                        <img src="Background/5.jpg" alt="LOL" height="200" width="200">
+                        <label>Loaded Veggie Pizza - Rs.120</label>
+                        <input type="checkbox" id="VeggiePizza">
+                    </td>
 
-                        <td>
-                            <img src="Background/5.jpg" alt="LOL" height="200" width="200">
-                            <label>Loaded Veggie Pizza - Rs.120</label>
-                            <input type="checkbox" id="VeggiePizza">
-                        </td>
+                    <td>
+                        <img src="Background/6.jpg" alt="LOL" height="200" width="200">
+                        <label>Masala Fries - Rs.80</label>
+                        <input type="checkbox" id="Fries">
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-                        <td>
-                            <img src="Background/6.jpg" alt="LOL" height="200" width="200">
-                            <label>Masala Fries - Rs.80</label>
-                            <input type="checkbox" id="Fries">
-                        </td>
-                    </tr>
-                </table>
+        <div class="element">
+            <h3>Desserts</h3>
+            <p>Sweet treats to satisfy your sugar cravings.</p>
 
-            </li>
-            <li class="menu-item">
-                <h3>Desserts</h3>
-                <p>Sweet treats to satisfy your sugar cravings.</p>
+            <table>
+                <tr>
+                    <td>
+                        <img src="Background/7.jpg" alt="LOL" height="200" width="200">
+                        <label>Chocolate Milkshake - Rs.80</label>
+                        <input type="checkbox" id="ChocolateMilkshake">
+                    </td>
 
+                    <td>
+                        <img src="Background/8.jpg" alt="LOL" height="200" width="200">
+                        <label>Chocolate Ice Cream - Rs.40</label>
+                        <input type="checkbox" id="ChocolateIceCream">
+                    </td>
 
-                <table>
-                    <tr>
-                        <td>
-                            <img src="Background/7.jpg" alt="LOL" height="200" width="200">
-                            <label>Chocolate Milkshake - Rs.80</label>
-                            <input type="checkbox" id="ChocolateMilkshake">
-                        </td>
+                    <td>
+                        <img src="Background/9.jpg" alt="LOL" height="200" width="200">
+                        <label>Jalebi with Rabri - Rs.60</label>
+                        <input type="checkbox" id="JalebiwithRabri">
+                    </td>
+                </tr>
+            </table>
+        </div>
 
-                        <td>
-                            <img src="Background/8.jpg" alt="LOL" height="200" width="200">
-                            <label>Chocolate Ice Cream - Rs.40</label>
-                            <input type="checkbox" id="ChocolateIceCream">
-                        </td>
-
-                        <td>
-                            <img src="Background/9.jpg" alt="LOL" height="200" width="200">
-                            <label>Jalebi with Rabri - Rs.60</label>
-                            <input type="checkbox" id="JalebiwithRabri">
-                        </td>
-                    </tr>
-                </table>
-
-            </li>
-        </ul>
 
         <br><br>
 
-        <div style="margin: 25px;">
+        <div style="margin: 25px;" class="element">
 
             <p id="bill">Total Bill: Rs. 0</p>
             <label>Calculate Bill</label>
