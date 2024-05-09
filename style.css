@@ -16,7 +16,7 @@ body {
 }
 
 #fancy{
-    border: 1px solid white;
+    border: 3px solid white;
     border-radius: 15px;
     background-color: green;
     font-size: 30px;
