@@ -15,6 +15,18 @@ body {
     padding: 20px;
 }
 
+#fancy{
+    border: 1px solid white;
+    border-radius: 15px;
+    background-color: green;
+    font-size: 30px;
+    margin-top: 30px;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 h1 {
     text-align: center;
     color: white;

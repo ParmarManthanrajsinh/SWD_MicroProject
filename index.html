@@ -49,19 +49,19 @@
                 <tr>
                     <td>
                         <img src="Background/4.jpg" alt="LOL" height="200" width="200">
-                        <label>Spicy Tandoori Burger - Rs.60</label>
+                        <label>4. Spicy Tandoori Burger - Rs.60</label>
                         <input type="checkbox" id="TandooriBurger">
                     </td>
 
                     <td>
                         <img src="Background/5.jpg" alt="LOL" height="200" width="200">
-                        <label>Loaded Veggie Pizza - Rs.120</label>
+                        <label>5. Loaded Veggie Pizza - Rs.120</label>
                         <input type="checkbox" id="VeggiePizza">
                     </td>
 
                     <td>
                         <img src="Background/6.jpg" alt="LOL" height="200" width="200">
-                        <label>Masala Fries - Rs.80</label>
+                        <label>6. Masala Fries - Rs.80</label>
                         <input type="checkbox" id="Fries">
                     </td>
                 </tr>
@@ -78,19 +78,19 @@
                 <tr>
                     <td>
                         <img src="Background/7.jpg" alt="LOL" height="200" width="200">
-                        <label>Chocolate Milkshake - Rs.80</label>
+                        <label>7. Chocolate Milkshake - Rs.80</label>
                         <input type="checkbox" id="ChocolateMilkshake">
                     </td>
 
                     <td>
                         <img src="Background/8.jpg" alt="LOL" height="200" width="200">
-                        <label>Chocolate Ice Cream - Rs.40</label>
+                        <label>8. Chocolate Ice Cream - Rs.40</label>
                         <input type="checkbox" id="ChocolateIceCream">
                     </td>
 
                     <td>
                         <img src="Background/9.jpg" alt="LOL" height="200" width="200">
-                        <label>Jalebi with Rabri - Rs.60</label>
+                        <label>9. Jalebi with Rabri - Rs.60</label>
                         <input type="checkbox" id="JalebiwithRabri">
                     </td>
                 </tr>
@@ -104,10 +104,10 @@
         <div style="margin: 25px;" class="element">
 
             <h2 id="bill">Total Bill: Rs. 0</h2>
-            <label>Calculate Bill</label>
-            <input type="button" value="Calculate" onclick="calculateBill()">
+            <input type="button" value="Calculate Bill" onclick="calculateBill()" id="fancy">
 
         </div>
+
     </div>
 
     <script>
@@ -121,22 +121,49 @@
         let ChocolateIceCream = document.getElementById('ChocolateIceCream');
         let JalebiwithRabri = document.getElementById('JalebiwithRabri');
 
-
-        // Function to calculate the bill total
         function calculateBill() {
             let total = 0;
 
-            if (Soup.checked) total += 50;
-            if (OnionRings.checked) total += 60;
-            if (Samosas.checked) total += 20;
-            if (TandooriBurger.checked) total += 60;
-            if (VeggiePizza.checked) total += 120;
-            if (Fries.checked) total += 80;
-            if (ChocolateMilkshake.checked) total += 80;
-            if (ChocolateIceCream.checked) total += 40;
-            if (JalebiwithRabri.checked) total += 60;
+            document.getElementById('bill').innerHTML = ' ';
 
-            document.getElementById('bill').innerHTML = "Total Bill: Rs. " + total;
+            if (Soup.checked) {
+                total += 50;
+                document.getElementById('bill').innerHTML += "Manchow soup - Rs.50" + "<br>";
+            }
+            if (OnionRings.checked) {
+                total += 60;
+                document.getElementById('bill').innerHTML += "Crispy Onion Rings - Rs.60" + "<br>";
+            }
+            if (Samosas.checked) {
+                total += 20;
+                document.getElementById('bill').innerHTML += "Mini Samosas - Rs.20" + "<br>";
+            }
+            if (TandooriBurger.checked) {
+                total += 60;
+                document.getElementById('bill').innerHTML += "Spicy Tandoori Burger - Rs.60" + "<br>";
+            }
+            if (VeggiePizza.checked) {
+                total += 120;
+                document.getElementById('bill').innerHTML += "Loaded Veggie Pizza - Rs.120" + "<br>";
+            }
+            if (Fries.checked) {
+                total += 80;
+                document.getElementById('bill').innerHTML += "Masala Fries - Rs.80" + "<br>";
+            }
+            if (ChocolateMilkshake.checked) {
+                total += 80;
+                document.getElementById('bill').innerHTML += "Chocolate Milkshake - Rs.80" + "<br>";
+            }
+            if (ChocolateIceCream.checked) {
+                total += 40;
+                document.getElementById('bill').innerHTML += "Chocolate Ice Cream - Rs.40" + "<br>";
+            }
+            if (JalebiwithRabri.checked) {
+                total += 60;
+                document.getElementById('bill').innerHTML += "Jalebi with Rabri - Rs.60" + "<br>";
+            }
+
+            document.getElementById('bill').innerHTML += "Total Bill: Rs. " + total;
         }
     </script>
 </body>
