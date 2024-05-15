@@ -9,7 +9,7 @@ body {
     color: white;
 }
 
-#details{
+#details {
     border: 3px solid white;
     border-radius: 15px;
     background-color: rgb(255, 255, 255);
@@ -18,7 +18,7 @@ body {
     padding-right: 20px;
 }
 
-#fancy{
+#fancy {
     border: 3px solid white;
     border-radius: 15px;
     background-color: green;
@@ -37,7 +37,7 @@ h1 {
 }
 
 .centered-element {
-    width: 700px;
+    width: 40%;
     margin: auto;
 }
 
