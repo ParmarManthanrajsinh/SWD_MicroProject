@@ -9,6 +9,11 @@ body {
     color: white;
 }
 
+.num{
+    border: 30px solid white;
+    border-radius: 20px;
+}
+
 #Ingredients {
     border: 3px solid white;
     border-radius: 15px;
